@@ -15,7 +15,7 @@
 </template>
 
 <script>
-  import EdgeOpacity from "edge-opacity/src/EdgeOpacity.vue";
+  import EdgeOpacity from "edgeopacity/src/EdgeOpacity.vue";
   export default {
     components: {
       EdgeOpacity,

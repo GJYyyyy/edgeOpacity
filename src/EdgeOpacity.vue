@@ -1,6 +1,6 @@
 <template>
     <div class="edge-opacity"
-        :style="`--top: ${_range[0]}; --right: ${_range[1]}; --bottom: ${_range[2]}; --left: ${_range[3]}; --edge-opacity: ${_edgeOpacity};`">
+        :style="`--top: ${_range[0]}; --right: ${_range[1]}; --bottom: ${_range[2]}; --left: ${_range[3]}; --edge-opacity: ${edgeOpacity};`">
         <div class="opacity-left-right">
             <div class="opacity-top-bottom">
                 <slot></slot>
@@ -38,9 +38,6 @@ export default {
                 return [arr[0], arr[1], arr[2], arr[3]];
             }
         },
-        _edgeOpacity() {
-            return this.edgeOpacity * 100 + '%';
-        }
     }
 }
 </script>
